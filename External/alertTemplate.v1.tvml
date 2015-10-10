@@ -1,0 +1,12 @@
+<document>
+	<alertTemplate>
+		<title>Well, that’s a pointed demo</title>
+		<description>An upsell as the very first example, Apple? Interesting perspective.</description>
+		<button>
+			<text>I kind of like it</text>
+		</button>
+		<button>
+			<text>Get me out of here!</text>
+		</button>
+	</alertTemplate>
+</document>
