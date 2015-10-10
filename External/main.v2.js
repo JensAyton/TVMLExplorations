@@ -8,6 +8,7 @@ function getDocument(url) {
 }
 
 function pushDoc(document) {
+	logger.log("About to push document: " + document);
 	navigationDocument.pushDocument(document);
 }
 

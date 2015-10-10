@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import "Logger.h"
 @import TVMLKit;
 
 static NSString * const BaseURL = @"http://jens.ayton.se/code/tvmlexplorations/";
@@ -19,7 +20,7 @@ static NSString * const BaseURL = @"http://jens.ayton.se/code/tvmlexplorations/"
 	self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
 	
 	TVApplicationControllerContext *context = [TVApplicationControllerContext new];
-	context.javaScriptApplicationURL = [self urlForResource:@"main.v1.js"];
+	context.javaScriptApplicationURL = [self urlForResource:@"main.v2.js"];
 	context.launchOptions = launchOptions;
 	
 	self.applicationController = [[TVApplicationController alloc] initWithContext:context
@@ -40,6 +41,14 @@ static NSString * const BaseURL = @"http://jens.ayton.se/code/tvmlexplorations/"
 	NSURL *url = [NSURL URLWithString:resourceName relativeToURL:baseURL].absoluteURL;
 	NSLog(@"%@", url.absoluteString);
 	return url;
+}
+
+
+#pragma mark TVApplicationControllerDelegate
+
+- (void)appController:(TVApplicationController *)appController evaluateAppJavaScriptInContext:(JSContext *)jsContext
+{
+	jsContext[@"logger"] = [[Logger alloc] initWithJSContext:jsContext];
 }
 
 @end

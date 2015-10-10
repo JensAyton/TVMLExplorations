@@ -10,6 +10,7 @@
 		1A2ED05F1BC98A8D0047F0CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED05E1BC98A8D0047F0CD /* main.m */; };
 		1A2ED0621BC98A8D0047F0CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0611BC98A8D0047F0CD /* AppDelegate.m */; };
 		1A2ED06A1BC98A8D0047F0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0691BC98A8D0047F0CD /* Assets.xcassets */; };
+		1A2ED0731BC9975A0047F0CD /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0721BC9975A0047F0CD /* Logger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		1A2ED0611BC98A8D0047F0CD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1A2ED0691BC98A8D0047F0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A2ED06B1BC98A8D0047F0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A2ED0711BC9975A0047F0CD /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		1A2ED0721BC9975A0047F0CD /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 			children = (
 				1A2ED0601BC98A8D0047F0CD /* AppDelegate.h */,
 				1A2ED0611BC98A8D0047F0CD /* AppDelegate.m */,
+				1A2ED0711BC9975A0047F0CD /* Logger.h */,
+				1A2ED0721BC9975A0047F0CD /* Logger.m */,
 				1A2ED0691BC98A8D0047F0CD /* Assets.xcassets */,
 				1A2ED06B1BC98A8D0047F0CD /* Info.plist */,
 				1A2ED05D1BC98A8D0047F0CD /* Supporting Files */,
@@ -141,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2ED0621BC98A8D0047F0CD /* AppDelegate.m in Sources */,
+				1A2ED0731BC9975A0047F0CD /* Logger.m in Sources */,
 				1A2ED05F1BC98A8D0047F0CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
