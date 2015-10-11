@@ -12,7 +12,12 @@ function getDocument(url) {
 }
 
 function pushDoc(document) {
-	logger.log("About to push document: " + document);
+	document.addEventListener("select", function(event) {
+		var targetID = event.target.getAttribute("id");
+		if (targetID) {
+			logger.log("User selected " + targetID);
+		}
+	});
 	navigationDocument.pushDocument(document);
 }
 
