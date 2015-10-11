@@ -11,6 +11,9 @@
 		1A2ED0621BC98A8D0047F0CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0611BC98A8D0047F0CD /* AppDelegate.m */; };
 		1A2ED06A1BC98A8D0047F0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0691BC98A8D0047F0CD /* Assets.xcassets */; };
 		1A2ED0731BC9975A0047F0CD /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0721BC9975A0047F0CD /* Logger.m */; };
+		1A2ED0761BC99FC60047F0CD /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0751BC99FC60047F0CD /* ResourceLoader.m */; };
+		1A2ED07C1BC9A4DB0047F0CD /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED07A1BC9A4DB0047F0CD /* main.js */; };
+		1A2ED0871BCA67D10047F0CD /* alertTemplate.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		1A2ED06B1BC98A8D0047F0CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A2ED0711BC9975A0047F0CD /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		1A2ED0721BC9975A0047F0CD /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		1A2ED0741BC99FC60047F0CD /* ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceLoader.h; sourceTree = "<group>"; };
+		1A2ED0751BC99FC60047F0CD /* ResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceLoader.m; sourceTree = "<group>"; };
+		1A2ED07A1BC9A4DB0047F0CD /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
+		1A2ED0881BCA67D10047F0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/alertTemplate.tvml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +64,13 @@
 		1A2ED05C1BC98A8D0047F0CD /* TVMLExplorations */ = {
 			isa = PBXGroup;
 			children = (
+				1A2ED0781BC9A4DB0047F0CD /* AppContent */,
 				1A2ED0601BC98A8D0047F0CD /* AppDelegate.h */,
 				1A2ED0611BC98A8D0047F0CD /* AppDelegate.m */,
 				1A2ED0711BC9975A0047F0CD /* Logger.h */,
 				1A2ED0721BC9975A0047F0CD /* Logger.m */,
+				1A2ED0741BC99FC60047F0CD /* ResourceLoader.h */,
+				1A2ED0751BC99FC60047F0CD /* ResourceLoader.m */,
 				1A2ED0691BC98A8D0047F0CD /* Assets.xcassets */,
 				1A2ED06B1BC98A8D0047F0CD /* Info.plist */,
 				1A2ED05D1BC98A8D0047F0CD /* Supporting Files */,
@@ -75,6 +85,15 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		1A2ED0781BC9A4DB0047F0CD /* AppContent */ = {
+			isa = PBXGroup;
+			children = (
+				1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */,
+				1A2ED07A1BC9A4DB0047F0CD /* main.js */,
+			);
+			path = AppContent;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -134,7 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2ED07C1BC9A4DB0047F0CD /* main.js in Resources */,
 				1A2ED06A1BC98A8D0047F0CD /* Assets.xcassets in Resources */,
+				1A2ED0871BCA67D10047F0CD /* alertTemplate.tvml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,11 +168,23 @@
 			files = (
 				1A2ED0621BC98A8D0047F0CD /* AppDelegate.m in Sources */,
 				1A2ED0731BC9975A0047F0CD /* Logger.m in Sources */,
+				1A2ED0761BC99FC60047F0CD /* ResourceLoader.m in Sources */,
 				1A2ED05F1BC98A8D0047F0CD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A2ED0881BCA67D10047F0CD /* en */,
+			);
+			name = alertTemplate.tvml;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A2ED06C1BC98A8D0047F0CD /* Debug */ = {
