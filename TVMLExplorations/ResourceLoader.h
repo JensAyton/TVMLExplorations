@@ -12,6 +12,8 @@ JSExportAs(load,
 - (id<ResourceTaskExport>)loadResourceAtURL:(NSString *)urlString completionHandler:(JSValue *)jsHandler
 );
 
+- (NSString *)resolveURL:(NSString *)url;
+
 @end
 
 @interface ResourceLoader : NSObject <ResourceLoaderExport>

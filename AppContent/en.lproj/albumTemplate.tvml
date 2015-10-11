@@ -1,0 +1,22 @@
+<document>
+	<compilationTemplate>
+		<list>
+			<header>
+				<title>$ALBUM_TITLE</title>
+				<subtitle>$ALBUM_SUBTITLE</subtitle>
+			</header>
+			<relatedContent>
+				<itemBanner>
+					<heroImg id="album_cover" src="" />
+				</itemBanner>
+			</relatedContent>
+			<section>
+				<listItemLockup id="track_template">
+					<ordinal>$TRACK_INDEX</ordinal>
+					<title>$TRACK_TITLE</title>
+					<subtitle>$TRACK_SUBTITLE</subtitle>
+				</listItemLockup>
+			</section>
+		</list>
+	</compilationTemplate>
+</document>

@@ -14,6 +14,14 @@
 		1A2ED0761BC99FC60047F0CD /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2ED0751BC99FC60047F0CD /* ResourceLoader.m */; };
 		1A2ED07C1BC9A4DB0047F0CD /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED07A1BC9A4DB0047F0CD /* main.js */; };
 		1A2ED0871BCA67D10047F0CD /* alertTemplate.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */; };
+		1A2ED08B1BCA890C0047F0CD /* introAlert.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED08A1BCA890C0047F0CD /* introAlert.js */; };
+		1A2ED08D1BCA94440047F0CD /* album.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED08C1BCA94440047F0CD /* album.js */; };
+		1A2ED0901BCA94710047F0CD /* albumTemplate.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED08E1BCA94710047F0CD /* albumTemplate.tvml */; };
+		1A2ED0961BCAE5040047F0CD /* albumStrings.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0941BCAE5040047F0CD /* albumStrings.json */; };
+		1A2ED0981BCAE7E40047F0CD /* playSample.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED0971BCAE7E40047F0CD /* playSample.js */; };
+		1A2ED09B1BCAF0370047F0CD /* calm.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED09A1BCAF0370047F0CD /* calm.js */; };
+		1A2ED09E1BCAF0590047F0CD /* calmTemplate.tvml in Resources */ = {isa = PBXBuildFile; fileRef = 1A2ED09C1BCAF0580047F0CD /* calmTemplate.tvml */; };
+		1A9C343D1BCB8C6B0040C1D0 /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C343C1BCB8C6B0040C1D0 /* ResourceLoader.js */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +37,14 @@
 		1A2ED0751BC99FC60047F0CD /* ResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceLoader.m; sourceTree = "<group>"; };
 		1A2ED07A1BC9A4DB0047F0CD /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		1A2ED0881BCA67D10047F0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/alertTemplate.tvml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		1A2ED08A1BCA890C0047F0CD /* introAlert.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = introAlert.js; sourceTree = "<group>"; };
+		1A2ED08C1BCA94440047F0CD /* album.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = album.js; sourceTree = "<group>"; };
+		1A2ED08F1BCA94710047F0CD /* en */ = {isa = PBXFileReference; explicitFileType = text.xml; name = en; path = en.lproj/albumTemplate.tvml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		1A2ED0951BCAE5040047F0CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/albumStrings.json; sourceTree = "<group>"; };
+		1A2ED0971BCAE7E40047F0CD /* playSample.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = playSample.js; sourceTree = "<group>"; };
+		1A2ED09A1BCAF0370047F0CD /* calm.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = calm.js; sourceTree = "<group>"; };
+		1A2ED09D1BCAF0580047F0CD /* en */ = {isa = PBXFileReference; explicitFileType = text.xml; name = en; path = en.lproj/calmTemplate.tvml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		1A9C343C1BCB8C6B0040C1D0 /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ResourceLoader.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +105,43 @@
 		1A2ED0781BC9A4DB0047F0CD /* AppContent */ = {
 			isa = PBXGroup;
 			children = (
-				1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */,
 				1A2ED07A1BC9A4DB0047F0CD /* main.js */,
+				1A2ED0971BCAE7E40047F0CD /* playSample.js */,
+				1A9C343C1BCB8C6B0040C1D0 /* ResourceLoader.js */,
+				1A2ED0911BCA96800047F0CD /* Intro alert */,
+				1A2ED0931BCA96940047F0CD /* Album */,
+				1A2ED0991BCAEFF70047F0CD /* Enhance Your Calm */,
 			);
 			path = AppContent;
 			sourceTree = SOURCE_ROOT;
+		};
+		1A2ED0911BCA96800047F0CD /* Intro alert */ = {
+			isa = PBXGroup;
+			children = (
+				1A2ED08A1BCA890C0047F0CD /* introAlert.js */,
+				1A2ED0891BCA67D10047F0CD /* alertTemplate.tvml */,
+			);
+			name = "Intro alert";
+			sourceTree = "<group>";
+		};
+		1A2ED0931BCA96940047F0CD /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				1A2ED08C1BCA94440047F0CD /* album.js */,
+				1A2ED08E1BCA94710047F0CD /* albumTemplate.tvml */,
+				1A2ED0941BCAE5040047F0CD /* albumStrings.json */,
+			);
+			name = Album;
+			sourceTree = "<group>";
+		};
+		1A2ED0991BCAEFF70047F0CD /* Enhance Your Calm */ = {
+			isa = PBXGroup;
+			children = (
+				1A2ED09A1BCAF0370047F0CD /* calm.js */,
+				1A2ED09C1BCAF0580047F0CD /* calmTemplate.tvml */,
+			);
+			name = "Enhance Your Calm";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -153,9 +201,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A2ED0981BCAE7E40047F0CD /* playSample.js in Resources */,
+				1A2ED0901BCA94710047F0CD /* albumTemplate.tvml in Resources */,
+				1A2ED0961BCAE5040047F0CD /* albumStrings.json in Resources */,
+				1A2ED08B1BCA890C0047F0CD /* introAlert.js in Resources */,
 				1A2ED07C1BC9A4DB0047F0CD /* main.js in Resources */,
 				1A2ED06A1BC98A8D0047F0CD /* Assets.xcassets in Resources */,
+				1A2ED09B1BCAF0370047F0CD /* calm.js in Resources */,
+				1A2ED09E1BCAF0590047F0CD /* calmTemplate.tvml in Resources */,
+				1A9C343D1BCB8C6B0040C1D0 /* ResourceLoader.js in Resources */,
 				1A2ED0871BCA67D10047F0CD /* alertTemplate.tvml in Resources */,
+				1A2ED08D1BCA94440047F0CD /* album.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +238,30 @@
 				1A2ED0881BCA67D10047F0CD /* en */,
 			);
 			name = alertTemplate.tvml;
+			sourceTree = "<group>";
+		};
+		1A2ED08E1BCA94710047F0CD /* albumTemplate.tvml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A2ED08F1BCA94710047F0CD /* en */,
+			);
+			name = albumTemplate.tvml;
+			sourceTree = "<group>";
+		};
+		1A2ED0941BCAE5040047F0CD /* albumStrings.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A2ED0951BCAE5040047F0CD /* en */,
+			);
+			name = albumStrings.json;
+			sourceTree = "<group>";
+		};
+		1A2ED09C1BCAF0580047F0CD /* calmTemplate.tvml */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A2ED09D1BCAF0580047F0CD /* en */,
+			);
+			name = calmTemplate.tvml;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

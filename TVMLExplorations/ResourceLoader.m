@@ -58,6 +58,25 @@ static NSInteger HTTPStyleErrorCode(NSError *error);
 		[weakSelf callJSCallback:jsHandler withArguments:@[ @(status), result ]];
 	};
 	
+	NSURL *url = [self resolveURLInternal:urlString];
+	ResourceTask *task = [[ResourceTask alloc] initWithURL:url
+												urlSession:self.urlSession
+										 completionHandler:handler];
+	[self.tasks addObject:task];
+	
+	return task;
+}
+
+
+- (NSString *)resolveURL:(NSString *)urlString
+{
+	NSURL *url = [self resolveURLInternal:urlString];
+	return url ? url.absoluteString : @"";
+}
+
+
+- (NSURL *)resolveURLInternal:(NSString *)urlString
+{
 	NSURL *url = [NSURL URLWithString:urlString];
 	NSString *scheme = url.scheme.lowercaseString;
 	
@@ -66,12 +85,7 @@ static NSInteger HTTPStyleErrorCode(NSError *error);
 		url = [NSBundle.mainBundle URLForResource:url.resourceSpecifier withExtension:nil];
 	}
 	
-	ResourceTask *task = [[ResourceTask alloc] initWithURL:url
-												urlSession:self.urlSession
-										 completionHandler:handler];
-	[self.tasks addObject:task];
-	
-	return task;
+	return url;
 }
 
 

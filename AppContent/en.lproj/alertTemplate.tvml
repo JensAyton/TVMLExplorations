@@ -1,12 +1,12 @@
 <document>
 	<alertTemplate>
-		<title>Well, that’s a pointed demo</title>
-		<description>An upsell as the very first example, Apple? Interesting perspective.</description>
-		<button id="ok_button">
-			<text>I kind of like it</text>
+		<title>Are you ready?</title>
+		<description>Well? Are you?</description>
+		<button url="vnd.myapp.local:album.js?album=2mCuMNdJkoyiXFhsQCLLqw">
+			<text>Let’s go!</text>
 		</button>
-		<button id="cancel_button">
-			<text>Get me out of here!</text>
+		<button url="vnd.myapp.local:calm.js">
+			<text>I'm not sure.</text>
 		</button>
 	</alertTemplate>
 </document>

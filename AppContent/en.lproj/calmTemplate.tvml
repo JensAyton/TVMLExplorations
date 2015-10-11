@@ -1,0 +1,9 @@
+<document>
+	<descriptiveAlertTemplate>
+		<title>OK, take it easy.</title>
+		<description>You can go back when you’re ready.</description>
+		<button action="navigationDocument.popToRootDocument()">
+			<text>I'm ready now.</text>
+		</button>
+	</descriptiveAlertTemplate>
+</document>
